@@ -12,7 +12,7 @@ future_blueprint = Blueprint('future_blueprint', __name__)
 
 @future_blueprint.route('/', methods=['GET'])
 def future_home():
-    return jsonify({"message": "Hello") 
+    return jsonify({"message": "Hello"})
 
 @future_blueprint.route('/future/portfolio', methods=['GET'])
 def future_portfolio():
