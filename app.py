@@ -1,13 +1,10 @@
 from flask import Flask, request, redirect
 import os
 from api.future_routes import future_blueprint
-from api.utils_routes import utils_blueprint
-
 app = Flask(__name__)
 
 # Register the blueprints
 app.register_blueprint(future_blueprint, url_prefix='/api')
-app.register_blueprint(utils_blueprint, url_prefix='/api')
 
 @app.before_request
 def redirect_to_api():
