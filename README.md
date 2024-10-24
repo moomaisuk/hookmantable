@@ -1,0 +1,2 @@
+# hookmantable
+AI Ping need.
