@@ -1,7 +1,6 @@
 from flask import Flask, request, redirect
 import os
 from api.future_routes import future_blueprint
-from api.spot_routes import spot_blueprint
 from api.utils_routes import utils_blueprint
 
 app = Flask(__name__)
